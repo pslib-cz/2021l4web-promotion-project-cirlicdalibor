@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    color: rgb(136, 96, 96);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.landing_page {
+    background-image: url(./img/landing-page-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-color: rgb(200, 207, 231);
+    margin-right: 50%;
+    height: 100vh;
+    background-position: right;
+}
+
+.slogan {
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    line-height: 92%;
+    margin-bottom: 0;
+}
+
+.you {
+    font-family: 'Bebas Neue';
+    color: rgb(200, 207, 231);
+    text-shadow: -2px 0 rgb(136, 96, 96), 0 2px rgb(136, 96, 96), 2px 0 rgb(136, 96, 96), 0 -2px rgb(136, 96, 96);
+    font-size: 120px;
+    margin-top: -25px;
+}
+
+.button {
+    font-family: 'Bebas Neue';
+    background-color: rgb(136, 96, 96);
+    border: none;
+    color: white;
+    padding: 0px 4px 0px 5px;
+    display: inline-block;
+}
+
+.container__button {
+    float: right;
+    margin-top: -40px;
+}
+
+.container__button p {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Arial';
+    font-weight: bold;
+}

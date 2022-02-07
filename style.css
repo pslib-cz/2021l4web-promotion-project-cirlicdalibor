@@ -10,14 +10,19 @@ a {
     font-size: 30px;
 }
 
+h1 {
+    color: white;
+    font-family: 'Bebas Neue';
+    margin: 0;
+    font-weight: normal;
+}
+
 .landing_page {
     background-image: url(./img/landing-page-pic.jpg);
     background-repeat: no-repeat;
     background-size: cover, contain;
     background-color: rgb(200, 207, 231);
     margin-right: 50%;
-    height: 100vh;
-    background-position: right;
 }
 
 .slogan {
@@ -44,6 +49,16 @@ a {
     display: inline-block;
 }
 
+.button:hover {
+    background-color: transparent;
+    transition: .1s;
+}
+
+.button:hover a {
+    color: rgb(136, 96, 96);
+    transition: .1s;
+}
+
 .container__button {
     float: right;
     margin-top: -40px;
@@ -55,4 +70,295 @@ a {
     margin-top: 10px;
     font-family: 'Arial';
     font-weight: bold;
+}
+
+.collection__header {
+    margin: 5%;
+}
+
+.collection__h1 {
+    font-family: 'Bebas Neue';
+    color: rgb(136, 96, 96);
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.collection__h2 {
+    font-family: 'Bebas Neue';
+    color: rgb(147, 111, 111);
+    font-size: 50px;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.products__header {
+    text-align: center;
+    background-color: rgb(136, 96, 96);
+    margin: 0;
+    padding: 10%;
+}
+
+.container__products {
+    text-align: right;
+    background-color: rgb(136, 96, 96);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid__picture grid__headline"
+      "grid__text grid__text";
+  }
+  
+  .grid__picture { grid-area: grid__picture; }
+  
+  .grid__headline { grid-area: grid__headline; }
+  
+  .grid__text { grid-area: grid__text; }  
+
+.container__products:nth-of-type(odd) {
+    text-align: left;
+    grid-template-areas:
+      "grid__headline grid__picture"
+      "grid__text grid__text";
+  }
+
+.container__products::after {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 2px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container__products p {
+    color: white;
+    font-family: 'Arial';
+    font-weight: bold;
+    line-height: 25px;
+    margin: 5%;
+}
+
+.container__products h2 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.grid__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__picture img {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.products {
+    margin: 0;
+}
+
+.products__text {
+    display: block;
+}
+
+.container__bracelets {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "bracelets__headline bracelets__headline2"
+      "bracelets__text bracelets__text";
+  }
+  
+  .bracelets__headline { grid-area: bracelets__headline; }
+  
+  .bracelets__headline2 { grid-area: bracelets__headline2; }
+  
+  .bracelets__text { grid-area: bracelets__text; }
+
+.bracelets__picture img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.bracelets__headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bracelets__headline h2 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    font-weight: normal;
+    text-align: right;
+
+}
+
+.bracelets__headline2 h3 {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 50%;
+}
+
+.bracelets__text {
+    margin: 5%;
+}
+
+.bracelets__text p {
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .collection__h1 {
+        font-size: 80px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .products__header {
+        padding: 5%;
+    }
+
+    .grid__headline h2 {
+        font-size: 80px;
+    }
+
+    .grid__text p {
+        font-size: 25px;
+        margin: 15%;
+        line-height: 35px;
+    }
+
+    .bracelets__headline h2 {
+        font-size: 80px;
+    }
+
+    .bracelets__headline2 h3 {
+        font-size: 50px;
+    }
+
+    .bracelets__text p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .bracelets__picture img {
+        margin-top: -60px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+.slogan br {
+    display: none;
+}
+
+.slogan {
+    margin-left: 50px;
+}
+
+.you {
+    text-shadow: none;
+    color: rgb(147, 111, 111);
+    font-size: 150px;
+    margin-left: 50px;
+}
+
+.container__button {
+    margin-top: 50%;
+}
+
+.button a {
+    font-size: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.collection__header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    margin: 30px;
+}
+
+.collection__h1 {
+    font-size: 50px;
+}
+
+.collection__h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.grid__headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__headline h2 {
+    font-size: 100px;
+}
+
+.grid__picture img {
+    max-width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.grid__text p {
+    margin: 5%;
+    text-align: center;
+}
+
+.bracelets__headline h2 {
+    font-size: 120px;
+}
+
+.bracelets__headline2 h3 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.bracelets__headline2 {
+    display: flex;
+    align-items: center;
+}
+
+.bracelets__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bracelets__picture img {
+    width: 700px;
+    height: auto;
+}
+
+.bracelets__text p {
+    margin: 0;
+}
+
 }

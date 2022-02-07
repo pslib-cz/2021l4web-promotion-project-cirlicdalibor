@@ -15,4 +15,4 @@ __SOUVISEJÍCÍ DOKUMENTY__
 
 ![Forest Vibe reklama](#)
 
-demo webu: (zde)[https://pslib-cz.github.io/2021l4web-promotion-project-cirlicdalibor/]
+demo webu: [zde](https://pslib-cz.github.io/2021l4web-promotion-project-cirlicdalibor/)
